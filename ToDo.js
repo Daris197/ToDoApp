@@ -2,11 +2,13 @@ class TodoManager {
     constructor() {
         this.tasks = [];
     }
-
+        rendering() {
+            console.log("What a beautiful day to code!");
+        }
     // Method to add tasks AND validate input
     addTask(description) {
         if (description && description.length > 3) {
-            
+
             const task = {
                 id: Math.random(),
                 desc: description,
